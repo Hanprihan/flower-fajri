@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pemrograman Berbasis Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding:0;
+        }
+
+        .container {
+            background-color: white;
+            width: 20cm; /*lebar sesuai kertas A3 */
+            height: 30cm; /*Tinggi sesuaai kertas A3*/
+            max-width: 800px;
+            margin: 20 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            display: flex; /*Gunakan flex box untuk tata letak */
+        }   
+
+        .left{
+            width: 60%; /*Bagian kiri 60%dari lebar container*/
+            background-color: #ffc0cb;
+            padding: 25px;
+            border-right: 2px solid #706784; /*garis pembatas ke bagian kanan*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right{
+            width: 50%;
+            font-size: 20px;
+            background-color: #f2b8d8;
+            padding: 20px;
+            color: #0c0c0c;
+            display: flex; /* Menggunakan flexbox untuk tata letak di dalam bagian kanan */
+            flex-direction: column; /* Mengatur tata letak elemen dalam kolom */
+            justify-content: center; /* Mengatur tata letak vertikal menjadi tengah */
+            align-items: center; /* Mengatur tata letak horizontal menjadi tengah */
+        
+        }
+
+        .left h1 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #190bb1;
+        text-align: center; /* Mengatur teks h1 menjadi di tengah-tengah */
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        color: #000000;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .profile p {
+        margin-bottom: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .profile strong {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .profile-img {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 50px; /* Tambahkan margin bawah di sini */
+      }
+
+      .contact h2,
+      .education h2 {
+        background-color: transparent; /* Menghilangkan latar belakang putih */
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-logo,
+      .education-logo {
+        max-width: 32px; /* Sesuaikan ukuran ikon */
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      .contact,
+      .education {
+        margin-bottom: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+       /* Efek hover untuk "Ringkasan Profil" dan "Kegiatan Tambahan" */
+       h2:hover {
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="left">
+        <h1 style="text-align: center">PRIHAN FAJRI</h1>
+        <p style="text-align: center;font-size: 16px; margin: 0;">
+        Mahasiswa Univ. Indraprasta PGRI
+    </p>
+        <div class="profile">
+            <p><strong class="underline">Profile</strong></p>
+            <p>Nama: PRIHAN FAJRI</p>
+            <p>NPM: 202143500788</p>
+            <p>Kelas: R5H</p>
+            <br />
+            <p><strong class="underline">Helper</strong></p>
+            <p>
+                Saya seorang fresh graduate dari Univ. Indraprasta PGRI Jurusan Teknik Informatika. Saya merupakan pribadi yang jujur, disiplin, dan bertanggung jawab dalam pekerjaan. Saya dapat bekerja sama dalam tim serta mampu bekerja di bawah tekanan sesuai aturan dan tugas dari perusahaan.
+            </p>
+            <br />
+            <p><strong class="underline">Skill</strong></p>
+            <p>
+                Microsoft word, Microsoft Excel, Microsoft Powerpoint
+                Program: MySQL
+            </p>
+            <br />
+            <p><strong class="underline">Organizational Experience</strong></p>
+            <p><strong class="bold">MT ROUDHOTUS SYABAB</strong> SEKSI PERALATAN MAJELIS</p>
+        </div>
+       </div>
+        <div class="right"> 
+            <img
+               class="profile-img"
+               src="https://i.postimg.cc/brVPW5Z4/fajri.jpg"
+               alt:"Foto Anda"
+            />
+            <div class="contact">
+              <h2>
+                <img
+                    class="contact-logo"
+                    src="https://i.postimg.cc/xdGbcq0f/call.png"
+                    alt="Contact"
+                />Contact
+              </h2>
+              <p>085214921012</p>
+              <p>fajristem11@gmail.com</p>
+              <p>Kp.PADURENAN, JLN JAMBON RT02/010 </p>
+            </div>
+            <div class="education">
+              <h2>
+                <img
+                    class="contact-logo"
+                    src="https://i.postimg.cc/1RFcQRFz/sekolah.png"
+                    alt="Education"
+                />Education
+              </h2>
+              <p><strong>S1 Teknik Informatika</strong></p>
+              <p>Universitas Indraprasta PGRI</p>
+              <p><strong>SMA | 2018- 2021</strong></p>
+              <p>SMK BINA KARYA MANDIRI</p>
+              <p><strong>SMP | 2015 - 2018</strong></p>
+              <p>SMPN 36 KOTA BEKASI</p>
+              <p><strong>SD | 2011 - 2015</strong></p>
+              <p>SDN Padurenan 5 </p>
+            </div>
+         </div>
+        </div>
+      </body>
+    </body>
+  </html>
+</html> 
